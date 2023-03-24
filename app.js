@@ -1,6 +1,7 @@
 const express = require('express');
 const createError = require('http-errors');
 const morgan = require('morgan');
+const cors = require("cors");
 require('dotenv').config();
 
 const mongoose = require('mongoose');
@@ -12,6 +13,7 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(morgan('dev'));
+app.use(cors({ origin: "*"}));
 
 // CONNECT TO MONGODB USING MONGOOSE
 const MONGODB_CONNECTION = process.env.DATABASE_URL
