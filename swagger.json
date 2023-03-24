@@ -1,32 +1,38 @@
 {
-    "swagger": "2.0",
-    "info": {
-      "title": "My API",
-      "description": "My API using Swagger",
-      "version": "1.0.0"
-    },
-    "basePath": "/",
-    "schemes": [
-      "http",
-      "https"
-    ],
-    "paths": {
-      "/": {
-        "get": {
-          "tags": [
-            "Hello"
-          ],
-          "summary": "Returns a greeting message",
-          "responses": {
-            "200": {
-              "description": "OK",
-              "schema": {
-                "type": "string"
-              }
+  "swagger": "2.0",
+  "info": {
+    "title": "API SWAGGER HIU 2K23",
+    "description": "Team Yasai",
+    "version": "1.0.0"
+  },
+  "basePath": "/",
+  "schemes": [
+    "http",
+    "https"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/": {
+      "get": {
+        "tags": [
+          "Hello"
+        ],
+        "summary": "Returns a greeting message",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "string"
             }
           }
         }
       }
     }
   }
+}
   
